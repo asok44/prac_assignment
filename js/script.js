@@ -1,6 +1,6 @@
 function void validate(){
-	var name= document.getElementByClass("name").value;
-	var description= document.getElementByClass("description").value;
+	const name= document.getElementByClass("name").value;
+	const description= document.getElementByClass("description").value;
 	var nameToMatch= /[a-z A-Z]/;
 	var descriptionToMatch= /[a-z A-Z 0-9 \.]/
 	

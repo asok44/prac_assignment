@@ -10,6 +10,7 @@ function void validate(){
 	else{
 		event.preventDefault();
 		windows.alert("The name should not include any special symbols or numbers.");
+		name.style.borderColor= "red";
 		return false;
 	}
 

@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Create Task</title>
-	<style type="text/css" href="style.css">
+	<style type="text/css" href="css/style.css">
 	</style>
-	<script type="text/javascript" href="script.js">
+	<script type="text/javascript" href="js/script.js">
 	</script>
 
 </head>
@@ -13,12 +13,12 @@
 	<div align="right">
 		<a href="index.html" target="_self"><input type="button" value="View all tasks">
 	</a></div>
-	<form name="create_task" action="#" onsubmit="return validate()">
+	<form onsubmit="return validate();" action="#" method="post">
 	<label>Name:
-		<input class="name" type="textbox" name="" required>
+		<input id="name" type="textbox" name="">
 	</label><br>
 	<label>Description:
-	<input class="description" type="textbox" name="" required>
+	<input id="description" type="textbox" name="">
 	</label><br>
 	<input type="submit" value="SUBMIT">
 	</form>

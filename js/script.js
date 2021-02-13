@@ -1,25 +1,22 @@
 function void validate(){
-	const name= document.getElementByClass("name").value;
-	const description= document.getElementByClass("description").value;
-	var nameToMatch= /[a-z A-Z]/;
-	var descriptionToMatch= /[a-z A-Z 0-9 \.]/
+	const name= document.getElementById("name");
+	const description= document.getElementById("description");
 	
-	if(nameToMatch.test(name)){
-		return true;
-	}
-	else{
+	if(name.value == ""){
 		event.preventDefault();
-		windows.alert("The name should not include any special symbols or numbers.");
-		name.style.borderColor= "red";
+		alert("The name can't be empty.");
 		return false;
 	}
-
-	if(descriptionToMatch.test(description)){
+	else{
 		return true;
 	}
-	else{
+
+	if(description.value == ""){
 		event.preventDefault();
-		return false; 
+		return false;
+	}
+	else{
+		return true; 
 	}
 
 
